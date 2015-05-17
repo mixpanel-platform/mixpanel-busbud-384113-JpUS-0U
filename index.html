@@ -76,7 +76,7 @@
           params['length_unit'] = unit;
           
           if(interval != null && unit != null){
-            MP.api.funnel("selected_departure", "checkout_pageview", "started_checkout", "thanks_checkout_pageview" params).done(function(results) {
+            MP.api.funnel("selected_departure", "checkout_pageview", "started_checkout", "thanks_checkout_pageview", params).done(function(results) {
               console.log(results);
               processResults(results);
             });
